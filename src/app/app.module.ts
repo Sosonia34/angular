@@ -1,25 +1,24 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { DirectivesComponent } from './directives/directives.component';
-import { ROUTES} from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
+import { ROUTES } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
+    SignUpComponent,
     UserProfileComponent,
-    DirectivesComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    RouterModule.forRoot(ROUTES)  
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
