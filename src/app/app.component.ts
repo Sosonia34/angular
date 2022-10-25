@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export class AppComponent {
-  title = 'Contact';
+  title = 'angularDirectives';
 }
