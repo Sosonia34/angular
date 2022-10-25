@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export class AppComponent {
-  title = 'Bienvenue sur le site de Sonia';
+  title = 'Contact';
 }
