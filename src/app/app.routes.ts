@@ -1,11 +1,11 @@
-import { Routes } from '@angular/router';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-const ROUTES: Routes = [
-  { path: 'signup', component: SignUpComponent },
-  { path: 'user', component: UserProfileComponent },
-  { path: '', component: UserProfileComponent },
-];
+const routes: Routes = [];
 
-export { ROUTES };
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

@@ -1,8 +1,8 @@
-export interface User {
-    name: string;
-    age?:number;
-    imgUrl?:string;
-    quote:string;
-    firstname:string; 
-    hide:boolean;    
-}
+export class User {
+    constructor(
+      public email: string,
+      public firstname: string,
+      public lastname: string,
+      public password: string
+    ) {}
+  }

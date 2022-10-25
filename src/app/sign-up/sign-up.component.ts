@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+/* eslint-disable @typescript-eslint/no-empty-function */
+import { Component } from '@angular/core';
+import {User} from '../models/user';
 
 @Component({
-  selector: 'app-sign-up',
-  templateUrl: './sign-up.component.html',
-  styleUrls: ['./sign-up.component.css']
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css']
 })
-export class SignUpComponent implements OnInit {
+export class SignupComponent {
 
-  constructor() { }
+  user: User = new User("", "", "", "");
 
-  ngOnInit(): void {
+  constructor() {
   }
 
+  onSubmit(): void {
+    console.log('Formulaire envoyé !');
+  }
 }
