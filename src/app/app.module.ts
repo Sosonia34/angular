@@ -1,19 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule} from "@angular/forms";
 import { AppComponent } from './app.component';
-import { DeveloperComponent } from './developer/developer.component';
-import { SkillComponent } from './skill/skill.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DeveloperComponent,
-    SkillComponent
+    CreateOnomatopiaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

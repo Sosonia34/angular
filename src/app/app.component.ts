@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Component } from '@angular/core';
 
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
 })
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export class AppComponent {
-  title = 'Quete 7 Angular';
+  title = 'Quete 8 Angular';
+
+  constructor() { }
+  onomatopiaList: string[] = [];
+
+  onReceiveOnomatopia(event: string): void {
+    this.onomatopiaList.push(event);
+  }
 }

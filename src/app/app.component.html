@@ -1,4 +1,11 @@
 
  
-Quete 7 Angular @Input
-<app-developer></app-developer>     
+<h1>Quête 8 Angular @Output</h1>
+
+<div *ngFor="let onomatopia of onomatopiaList">
+    <ul>
+      <li>{{ onomatopia }}</li>
+    </ul>
+  </div>
+  
+  <app-createOnomatopia (onomatopia)="onReceiveOnomatopia($event)"></app-createOnomatopia>
