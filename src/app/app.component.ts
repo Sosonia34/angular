@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export class AppComponent {
-  title = 'router';
+  title = 'Quete 7 Angular';
 }

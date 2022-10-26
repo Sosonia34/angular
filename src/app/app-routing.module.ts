@@ -1,5 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DeveloperComponent} from "./developer/developer.component";
+import { SkillComponent} from "./skill/skill.component";
+
 
 const routes: Routes = [];
 
